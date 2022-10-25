@@ -1,12 +1,54 @@
+
+<!-- * File: index.html
+* Author: Baráth Dávid
+* Copyright: 2022, Baráth Dávid
+* Group: Szoft 2/n
+* Date: 2022-10-25
+* Github: https://github.com/587/
+* Licenc: GNU GPL -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Trapáz terület számitása</h1>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./app.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="haromszog">
+            <div class="desc">
+                <h1>Trapáz terület számitása</h1>
+                <p>Baráth Dávid, 2022.10.25 Szoft 2 N
+                </p>
+                <p>Adja meg az oldalak hosszát:</p>
+                <div>
+                    <input class="text-xl ml-14" type="text" id="Ahossz" placeholder="Ahossz:">
+                    <br>
+                </div>
+                <div>
+                    <input class="text-xl" type="text" id="Bhossz" placeholder="Bhossz:">
+                    <br>
+                </div>
+                <div>
+                    <input class="text-xl" type="text" id="Chossz" placeholder="Chossz:">
+                    <br>
+                </div>
+                <div>
+                    <input class="text-xl" type="text" id="Dhossz" placeholder="Dhossz:">
+                    <br>
+                </div>
+                <button
+                    class="bg-sky-400 text-xl border-2 color-white p-1 px-3 rounded-xl mt-4 ml-4 mb-4"
+                    id="calgomb">Számít</button>
+                <div
+                    id="eredmeny"
+                    class="text-center rounded-sm border-2 color-white bg-sky-400"></div>
+            </div>
+        </div>
+
+        <script src="./app.js"></script>
+        <script src="./app.ts"></script>
+    </body>
 </html>
